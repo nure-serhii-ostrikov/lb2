@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Демонстрація CSS</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        h1 {
+            color: blue;
+            text-align: center;
+        }
+
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+
+        #main-content {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .positioned {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: lightgreen;
+            padding: 10px;
+        }
+
+        .sidebar {
+            float: left;
+            width: 30%;
+            background-color: lightgray;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .content {
+            float: right;
+            width: 65%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <h1>Лабораторна робота з CSS</h1>
+
+    <p style="color: red; font-size: 18px;">Цей абзац має червоний колір, заданий за допомогою inline-стилів.</p>
+
+    <div id="main-content" class="clearfix">
+        <div class="sidebar">
+            <h2>Навігація</h2>
+            <ul>
+                <li><a href="#">Посилання 1</a></li>
+                <li><a href="#">Посилання 2</a></li>
+                <li><a href="#">Посилання 3</a></li>
+            </ul>
+        </div>
+
+        <div class="content">
+            <h2>Основний контент</h2>
+            <p>Це основний контент сторінки. Можна використовувати різні стилі для його форматування.</p>
+            <p class="highlight">Цей абзац виділений за допомогою класу "highlight".</p>
+        </div>
+    </div>
+
+    <div class="positioned">Я розташований за допомогою абсолютного позиціонування!</div>
+</body>
+</html>
