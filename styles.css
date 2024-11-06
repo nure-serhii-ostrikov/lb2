@@ -15,32 +15,28 @@ a:hover {
 }
 
 .hidden-block {
-    position: fixed;
-    top: 75%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 20px;
-    height: 40px;
-    background-color: yellow;
+    margin-left: 0px;
+    position: absolute;
+    left: -190px;
     overflow: hidden;
-    transition: width 0.3s;
-    cursor: pointer;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
+    transition: all 0.3s;
 }
 
 .hidden-block:hover {
-    width: 200px;
+    left: 0px;
 }
 
 .hidden-content {
-    padding-left: 30px;
+    padding-left: 0px;
     padding-top: 10px;
     color: white;
     font-size: 16px;
+    border-radius: 10%;
 }
 
-.nure-image {
-    max-width: 50%;
-    max-height: 50%;
+#hidden-block-tip {
+  text-orientation: upright;
+  writing-mode: vertical-lr;
+  background-color: yellow;
+  color: black;
 }
